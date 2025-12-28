@@ -20,6 +20,11 @@ export function NoticeModal({ notice, onClose }: Props) {
         <h3 className="text-xl font-bold mb-2">Announcement</h3>
         <p className="text-gray-700 mb-4">{notice.text}</p>
         <p className="text-sm text-gray-500">Posted on {notice.date}</p>
+        <div className="flex gap-4 mt-2">
+          <button className="bg-blue-700 text-white px-4 py-2 rounded">
+            Book Free Demo on WhatsApp
+          </button>
+        </div>
       </div>
     </div>
   );

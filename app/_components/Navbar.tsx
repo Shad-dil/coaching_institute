@@ -1,6 +1,16 @@
 export default function Navbar() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
+      <div className="md:flex justify-between items-center px-6 py-2 bg-gray-300 hidden">
+        <p>
+          Confused which course to choose? Book a FREE demo class & talk
+          directly to our instructor
+        </p>
+        <button className="bg-blue-700 text-white px-4 py-2 rounded">
+          Book Free Demo on WhatsApp
+        </button>
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-blue-700">
           YOUR Computer Institute

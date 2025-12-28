@@ -41,19 +41,20 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Build Your Career with Practical Computer Training
+        <h1 className="text-2xl md:text-5xl font-bold md:mb-4 mb-3">
+          Job-Focused Computer Courses in Darbhanga
         </h1>
-        <p className="max-w-2xl text-lg mb-8">
-          Job-oriented courses with expert trainers and real-world practice.
+        <h2 className="text-md md:text-3xl font-bold md:mb-4 mb-3">
+          Trusted Offline Coaching Institute with Practical Training
+        </h2>
+        <p className="max-w-2xl md:text-lg text-sm md:mb-8 mb-4">
+          • Practical training • Small batches • Affordable fees • Offline +
+          personal attention
         </p>
 
         <div className="flex gap-4">
-          <button className="bg-yellow-400 text-black px-6 py-3 rounded font-semibold">
-            View Courses
-          </button>
-          <button className="border border-white px-6 py-3 rounded">
-            Contact Us
+          <button className="bg-blue-700 text-white px-4 py-2 rounded">
+            Book Free Demo on WhatsApp
           </button>
         </div>
       </div>

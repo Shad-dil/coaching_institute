@@ -7,6 +7,7 @@ import NoticeBoard from "./_components/NoticeBoard";
 import Teams from "./_components/Teams";
 import Contact from "./_components/Contact";
 import Footer from "./_components/Footer";
+import WhatsAppButton from "./_components/WhatsApp";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
       <CoursesGrid />
       <WhyUs />
       <Teams />
-      <Contact />
+      {/* <Contact /> */}
+      <WhatsAppButton />
       <Footer />
     </>
   );

@@ -1,8 +1,10 @@
 export type Course = {
   id: string;
+  imageUrl: string;
   title: string;
   duration: string;
   certificate: boolean;
+  whoCanJoin: string[];
   sections: {
     title: string;
     topics: string[];
@@ -12,8 +14,13 @@ export type Course = {
 export const courses: Course[] = [
   {
     id: "dca",
+    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
     title: "DCA (Diploma in Computer Application)",
     duration: "3 Months",
+    whoCanJoin: [
+      "School / College Students",
+      "Beginners with no computer background",
+    ],
     certificate: true,
     sections: [
       {
@@ -50,9 +57,11 @@ export const courses: Course[] = [
 
   {
     id: "fullstack",
+    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
     title: "Full Stack Developer",
     duration: "1 Year",
     certificate: true,
+    whoCanJoin: ["You Need IT/Software Job"],
     sections: [
       {
         title: "Frontend",

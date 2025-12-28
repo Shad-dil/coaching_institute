@@ -22,7 +22,7 @@ export default function NoticeBoard() {
   const notices: Notice[] = [
     {
       id: 1,
-      text: "New DCA batch starts from 10 Feb 2025",
+      text: "🟠 Admissions Open | New Batch from 5 Jan",
       date: "2025-12-27",
       expiresOn: "2026-04-01",
     },
