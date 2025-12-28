@@ -38,7 +38,11 @@ const Reviews = () => {
 };
 
 export default Reviews;
-const Stars = ({ count }) => (
+type StarsProps = {
+  count: number; // rating value
+};
+
+const Stars: React.FC<StarsProps> = ({ count }) => (
   <div className="flex justify-center gap-1 mt-2">
     {[...Array(5)].map((_, i) => (
       <span key={i}>{i < count ? "⭐" : "☆"}</span>
