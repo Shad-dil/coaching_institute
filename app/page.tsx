@@ -8,6 +8,7 @@ import Teams from "./_components/Teams";
 import Contact from "./_components/Contact";
 import Footer from "./_components/Footer";
 import WhatsAppButton from "./_components/WhatsApp";
+import Reviews from "./_components/Reviews";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <NoticeBoard />
       <CoursesGrid />
       <WhyUs />
+      <Reviews />
       <Teams />
       {/* <Contact /> */}
       <WhatsAppButton />

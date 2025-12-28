@@ -53,9 +53,14 @@ export default function Hero() {
         </p>
 
         <div className="flex gap-4">
-          <button className="bg-blue-700 text-white px-4 py-2 rounded">
+          <a
+            className="bg-blue-700 text-white px-4 py-2 rounded"
+            href="https://wa.me/919876543210?text=Hi%20Sir,%20I%20want%20to%20book%20a%20free%20demo%20class." // replace with your WhatsApp number
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Book Free Demo on WhatsApp
-          </button>
+          </a>
         </div>
       </div>
     </section>
