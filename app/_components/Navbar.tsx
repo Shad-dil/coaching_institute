@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import BannerNav from "./BannerNav";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,9 +11,9 @@ export default function Navbar() {
     "https://wa.me/919876543210?text=Hi%20Sir,%20I%20want%20to%20know%20more%20about%20admissions.";
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="shadow-md top-0 z-50 text-white">
       {/* Top info bar (desktop only) */}
-      <div className="hidden md:block bg-gray-100">
+      <div className="hidden md:block bg-[#0F4529]">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2 text-sm">
           <p>
             Confused which course to choose? Book a FREE demo class & talk
@@ -22,22 +23,24 @@ export default function Navbar() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-700 text-white px-4 py-1.5 rounded"
+            className="bg-transparent text-white px-4 py-1.5 rounded border border-white"
           >
             Book Free Demo
           </a>
         </div>
       </div>
-
+      {/* Navbar with Logo  */}
+      <BannerNav />
       {/* Main navbar */}
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <a className="text-2xl font-bold text-blue-700" href="#">
-          Alphaa1 Academy
-        </a>
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center bg-[#0F4529] text-white">
+        {/* ✅ Mobile-only logo */}
+        <div className="flex items-center md:hidden">
+          <img src="/logo.png" alt="Institute Logo" className="h-8 w-auto" />
+        </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
+        <nav className="hidden md:flex gap-6 font-medium">
+          <a href="#">Home</a>
           <a href="#courses">Courses</a>
           <a href="#why-us">Why Us</a>
           <a href="#noticeboard">Batches</a>
@@ -51,15 +54,16 @@ export default function Navbar() {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-block bg-blue-700 text-white px-5 py-2 rounded font-medium"
+          className="hidden md:inline-block border border-white px-5 py-2 rounded"
         >
           Admissions Open
         </a>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile hamburger */}
         <button
-          className="md:hidden text-gray-800"
+          className="md:hidden text-white"
           onClick={() => setOpen(!open)}
+          aria-label="Toggle Menu"
         >
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -67,8 +71,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t">
-          <nav className="flex flex-col gap-4 px-6 py-4 text-gray-700 font-medium hover:text-blue-700">
+        <div className="md:hidden bg-[#0F4529] border-t">
+          <nav className="flex flex-col gap-4 px-6 py-4 text-white font-medium hover:text-blue-700">
             <a href="#courses" onClick={() => setOpen(false)}>
               Courses
             </a>

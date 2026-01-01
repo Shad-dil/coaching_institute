@@ -12,7 +12,7 @@ export default function WhyUs() {
               key={idx}
               className="bg-white rounded-lg shadow-sm p-6 text-center"
             >
-              <Icon className="text-blue-600 text-3xl mx-auto mb-3" />
+              <Icon className="text-[#0F4529] text-3xl mx-auto mb-3" />
               <p className="text-3xl font-bold">{item.value}</p>
               <p className="text-gray-600 mt-1">{item.label}</p>
             </div>

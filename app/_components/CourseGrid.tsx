@@ -39,7 +39,7 @@ export default function CoursesGrid() {
               ))}
 
               <div className="flex justify-between space-x-2 mt-2">
-                <button className="text-white font-semibold bg-blue-700 p-2 cursor-pointer">
+                <button className="text-white font-semibold bg-[#0F4529] p-2 cursor-pointer">
                   Book Demo
                 </button>
                 <button

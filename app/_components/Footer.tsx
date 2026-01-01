@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer
-      className="bg-[#0f172a] text-white py-16 px-6"
+      className="bg-[#16482b] text-white py-16 px-6"
       id="address"
       aria-label="Footer"
     >
@@ -21,7 +21,7 @@ export default function Footer() {
               <p className="text-xl font-semibold">Alphaa1 Academy</p>
             </div>
 
-            <p className="text-sm text-gray-300 leading-relaxed">
+            <p className="text-sm text-white leading-relaxed">
               Alphaa1 Academy is a trusted computer and professional coaching
               institute in Darbhanga, Bihar. We focus on clear fundamentals,
               practical training, and personal guidance to help students build
@@ -29,7 +29,7 @@ export default function Footer() {
             </p>
 
             {/* Trust Badges */}
-            <ul className="mt-4 text-sm text-gray-300 space-y-1">
+            <ul className="mt-4 text-sm text-white space-y-1">
               <li>✔ Experienced & Qualified Instructors</li>
               <li>✔ Practical & Job-Oriented Training</li>
               <li>✔ Small Batch for Personal Attention</li>
@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* ✅ Card 2: Address (SEO critical) */}
           <FooterCard title="Contact & Address">
-            <address className="not-italic text-sm text-gray-300 leading-relaxed">
+            <address className="not-italic text-sm text-white leading-relaxed">
               <strong>Alphaa1 Academy</strong> <br />
               4VCH+Q24, Rampur Ramdeo
               <br />
@@ -69,7 +69,7 @@ export default function Footer() {
               </a>
             </p>
 
-            <p className="mt-3 text-sm text-gray-400">
+            <p className="mt-3 text-sm text-white">
               Timings: Monday – Saturday, 9:00 AM – 7:00 PM
             </p>
           </FooterCard>
@@ -90,7 +90,7 @@ export default function Footer() {
               href="https://maps.app.goo.gl/zWL43YuXiXSAyrXt8"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-3 text-sm text-blue-400 hover:underline"
+              className="inline-block mt-3 text-sm text-white hover:underline"
             >
               View on Google Maps
             </a>
@@ -98,7 +98,7 @@ export default function Footer() {
         </div>
 
         {/* ✅ Bottom Bar */}
-        <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+        <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-white">
           © {new Date().getFullYear()} Alphaa1 Academy, Darbhanga. <br />
           All rights reserved. Designed & developed by{" "}
           <a
@@ -124,8 +124,8 @@ function FooterCard({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-[#020617] p-6 rounded-lg shadow-md h-full">
-      <h3 className="text-lg font-semibold mb-4 text-blue-400">{title}</h3>
+    <div className="bg-[#089141] p-6 rounded-lg shadow-md h-full">
+      <h3 className="text-lg font-semibold mb-4 text-white">{title}</h3>
       {children}
     </div>
   );
