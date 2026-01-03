@@ -1,111 +1,301 @@
 export type Course = {
   id: string;
-  imageUrl: string;
-  title: string;
-  duration: string;
-  certificate: boolean;
-  whoCanJoin: string[];
-  sections: {
-    title: string;
-    topics: string[];
-  }[];
+  name: string;
+  eligibility: string;
 };
 
-export const courses: Course[] = [
+export type Faculty = {
+  id: string;
+  title: string;
+  courses: Course[];
+};
+
+export const faculties: Faculty[] = [
+  /* ================= HOTEL & HOSPITALITY ================= */
   {
-    id: "dca",
-    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
-    title: "DCA (Diploma in Computer Application)",
-    duration: "3 Months",
-    whoCanJoin: [
-      "School / College Students",
-      "Beginners with no computer background",
-    ],
-    certificate: true,
-    sections: [
+    id: "hotel-hospitality",
+    title: "Faculty of Hotel & Hospitality",
+    courses: [
+      { id: "bhmct", name: "BHMCT", eligibility: "10+2" },
       {
-        title: "Fundamental",
-        topics: [
-          "History of Computer",
-          "Basic Knowledge",
-          "Notepad",
-          "WordPad",
-          "MS Paint",
-          "Search",
-        ],
+        id: "bsc-hotel",
+        name: "B.Sc. Hotel & Hospitality",
+        eligibility: "10+2",
       },
       {
-        title: "Office Package",
-        topics: ["MS Word", "MS Excel", "MS PowerPoint"],
+        id: "mba-tourism",
+        name: "MBA Tourism & Hospitality",
+        eligibility: "Bachelor Degree",
       },
       {
-        title: "Extra Knowledge",
-        topics: ["Control Panel", "Software Installation", "DOS"],
+        id: "pgdhm",
+        name: "PG Diploma in Hotel Management",
+        eligibility: "Bachelor Degree",
       },
       {
-        title: "Internet Course",
-        topics: [
-          "Email Account Creation",
-          "Video Call",
-          "Online Banking",
-          "Railway / Airline Ticket Booking",
-          "PAN / Aadhaar Status",
-        ],
+        id: "dhm",
+        name: "Diploma in Hotel Management (1 / 3 Year)",
+        eligibility: "10+2 / 10th",
       },
     ],
   },
 
+  /* ================= SCIENCE ================= */
   {
-    id: "fullstack",
-    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
-    title: "Full Stack Developer",
-    duration: "1 Year",
-    certificate: true,
-    whoCanJoin: ["You Need IT/Software Job"],
-    sections: [
+    id: "science",
+    title: "Faculty of Science",
+    courses: [
       {
-        title: "Frontend",
-        topics: ["HTML", "CSS", "JavaScript"],
+        id: "bsc",
+        name: "B.Sc (PCM / PCB / ZBC)",
+        eligibility: "10+2 Science",
       },
       {
-        title: "Backend",
-        topics: ["PHP", "MySQL"],
+        id: "bsc-hons",
+        name: "B.Sc (Hons / Hons with Research)",
+        eligibility: "10+2 Science",
+      },
+      {
+        id: "msc-2yr",
+        name: "M.Sc (All Subjects) – 2 Years",
+        eligibility: "Graduation in relevant subject",
+      },
+      {
+        id: "msc-1yr",
+        name: "M.Sc – 1 Year",
+        eligibility: "NHEQF Level 6",
       },
     ],
   },
+
+  /* ================= ARTS & SOCIAL SCIENCE ================= */
   {
-    id: "fullstack",
-    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
-    title: "Full Stack Developer",
-    duration: "1 Year",
-    certificate: true,
-    whoCanJoin: ["You Need IT/Software Job"],
-    sections: [
+    id: "arts-social-science",
+    title: "Faculty of Arts & Social Science",
+    courses: [
+      { id: "ba", name: "B.A (General)", eligibility: "10+2" },
       {
-        title: "Frontend",
-        topics: ["HTML", "CSS", "JavaScript"],
+        id: "ba-hons",
+        name: "B.A (Hons / Hons with Research)",
+        eligibility: "10+2",
       },
       {
-        title: "Backend",
-        topics: ["PHP", "MySQL"],
+        id: "ma-2yr",
+        name: "M.A (All Subjects) – 2 Years",
+        eligibility: "Graduation with 45%",
+      },
+      {
+        id: "ma-1yr",
+        name: "M.A – 1 Year",
+        eligibility: "NHEQF Level 6",
+      },
+      { id: "bsw", name: "BSW", eligibility: "10+2" },
+      { id: "bsw-hons", name: "BSW (Hons)", eligibility: "10+2" },
+      {
+        id: "msw",
+        name: "MSW",
+        eligibility: "BSW / BA Sociology",
       },
     ],
   },
+
+  /* ================= COMPUTER & IT ================= */
   {
-    id: "fullstack",
-    imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
-    title: "Full Stack Developer",
-    duration: "1 Year",
-    certificate: true,
-    whoCanJoin: ["You Need IT/Software Job"],
-    sections: [
+    id: "computer-it",
+    title: "Faculty of Computer & IT",
+    courses: [
+      { id: "bca", name: "BCA", eligibility: "10+2" },
       {
-        title: "Frontend",
-        topics: ["HTML", "CSS", "JavaScript"],
+        id: "bca-hons",
+        name: "BCA (Hons)",
+        eligibility: "10+2 with Maths",
       },
       {
-        title: "Backend",
-        topics: ["PHP", "MySQL"],
+        id: "bsc-cs",
+        name: "B.Sc (Hons) CS / IT / AI",
+        eligibility: "10+2 with 45%",
+      },
+      {
+        id: "mca-2yr",
+        name: "MCA – 2 Years",
+        eligibility: "Graduation (CS / IT / Maths)",
+      },
+      {
+        id: "mca-1yr",
+        name: "MCA – 1 Year",
+        eligibility: "NHEQF Level 6",
+      },
+      {
+        id: "msc-it",
+        name: "M.Sc IT / CS",
+        eligibility: "BCA / B.Sc IT",
+      },
+      {
+        id: "pgd-it",
+        name: "PG Diploma / Diploma (IT Courses)",
+        eligibility: "Graduation / 10+2",
+      },
+    ],
+  },
+
+  /* ================= ENGINEERING & TECHNOLOGY ================= */
+  {
+    id: "engineering-technology",
+    title: "Faculty of Engineering & Technology",
+    courses: [
+      {
+        id: "btech",
+        name: "B.Tech (All Branches)",
+        eligibility: "10+2 / ITI / Diploma",
+      },
+      {
+        id: "btech-le",
+        name: "B.Tech (Lateral Entry)",
+        eligibility: "Diploma / D.Voc",
+      },
+      {
+        id: "diploma-eng",
+        name: "Diploma Engineering",
+        eligibility: "10th",
+      },
+      {
+        id: "diploma-le",
+        name: "Diploma (Lateral Entry)",
+        eligibility: "10+2 (PCM) / ITI",
+      },
+      {
+        id: "mtech",
+        name: "M.Tech (All Specializations)",
+        eligibility: "B.Tech / B.E / M.Sc",
+      },
+    ],
+  },
+
+  /* ================= PHARMACY ================= */
+  {
+    id: "pharmacy",
+    title: "Faculty of Pharmacy",
+    courses: [
+      {
+        id: "dpharm",
+        name: "Diploma in Pharmacy (D.Pharm)",
+        eligibility: "10+2 (PCM/PCB)",
+      },
+      {
+        id: "bpharm",
+        name: "Bachelor of Pharmacy (B.Pharm)",
+        eligibility: "10+2 Science",
+      },
+    ],
+  },
+
+  /* ================= PARAMEDICAL & HEALTH ================= */
+  {
+    id: "paramedical-health",
+    title: "Faculty of Paramedical & Health",
+    courses: [
+      {
+        id: "bmlt",
+        name: "BMLT",
+        eligibility: "10+2 Biology",
+      },
+      {
+        id: "bpt",
+        name: "BPT / BPT-LE",
+        eligibility: "10+2 Biology / DPT",
+      },
+      {
+        id: "bsc-paramedical",
+        name: "B.Sc Paramedical (All)",
+        eligibility: "10+2 Biology",
+      },
+      {
+        id: "msc-paramedical",
+        name: "M.Sc Paramedical",
+        eligibility: "B.Sc Relevant",
+      },
+      {
+        id: "diploma-paramedical",
+        name: "Diploma / PG Diploma / Certificate",
+        eligibility: "10th / 12th / Graduation",
+      },
+      {
+        id: "bph-mph",
+        name: "BPH / MPH",
+        eligibility: "10+2 Science / Graduation",
+      },
+    ],
+  },
+
+  /* ================= YOGA ================= */
+  {
+    id: "yoga",
+    title: "Faculty of Yoga",
+    courses: [
+      { id: "bnys", name: "BNYS", eligibility: "10+2 Biology" },
+      {
+        id: "bnys-le",
+        name: "BNYS (LE)",
+        eligibility: "10+2 + DNYS",
+      },
+      { id: "dnys", name: "DNYS", eligibility: "10+2" },
+      { id: "ba-yoga", name: "BA/BSc Yoga", eligibility: "10+2" },
+      {
+        id: "ma-yoga",
+        name: "MA/MSc Yoga",
+        eligibility: "Graduation",
+      },
+      {
+        id: "pgdy",
+        name: "PG Diploma Yoga",
+        eligibility: "Graduation",
+      },
+    ],
+  },
+
+  /* ================= LAW ================= */
+  {
+    id: "law",
+    title: "Faculty of Law",
+    courses: [
+      {
+        id: "llb",
+        name: "LLB",
+        eligibility: "Graduation with 45%",
+      },
+      { id: "ba-llb", name: "BA LLB", eligibility: "10+2" },
+      {
+        id: "llm",
+        name: "LLM",
+        eligibility: "LLB / BA-LLB",
+      },
+    ],
+  },
+
+  /* ================= EDUCATION & VOCATION ================= */
+  {
+    id: "education-vocation",
+    title: "Faculty of Education & Vocation",
+    courses: [
+      {
+        id: "ba-education",
+        name: "B.A Education / Physical Education",
+        eligibility: "10+2",
+      },
+      {
+        id: "ma-education",
+        name: "M.A Education / Physical Education",
+        eligibility: "Graduation",
+      },
+      {
+        id: "bvoc",
+        name: "B.Voc / M.Voc / D.Voc / Advanced Diploma",
+        eligibility: "10th / 10+2 / Graduation",
+      },
+      {
+        id: "phd",
+        name: "Ph.D",
+        eligibility: "Master Degree with 55%",
       },
     ],
   },

@@ -11,11 +11,11 @@ export default function BannerNav() {
           {/* Left: Logo */}
           <div className="flex items-center gap-2">
             <Image
-              src="/logo.png"
+              src="/main-logo.png"
               alt="Institute Logo"
-              className="h-10 w-auto"
-              width={40}
-              height={40}
+              className="h-24 w-auto"
+              width={100}
+              height={100}
             />
           </div>
 
@@ -24,8 +24,8 @@ export default function BannerNav() {
             <InfoItem
               icon={<Phone size={18} />}
               label="CALL US NOW"
-              value="+91 6203545701"
-              href="tel:+916203545701"
+              value="+91 9321506675"
+              href="tel:+91 9321506675"
             />
 
             <InfoItem

@@ -1,65 +1,63 @@
 "use client";
 
-import { useState } from "react";
-import { courses, Course } from "../_data/Course";
-import CourseModal from "../_components/CourseModal";
-import Image from "next/image";
+import { useState, useMemo } from "react";
+import { faculties } from "../_data/Course";
+import { FacultyAccordion } from "./FacultyAccordion";
 
-export default function CoursesGrid() {
-  const [activeCourse, setActiveCourse] = useState<Course | null>(null);
+export default function CourseCatalog() {
+  const [search, setSearch] = useState("");
+  const [openFacultyId, setOpenFacultyId] = useState<string | null>(null);
+
+  const searchTerm = search.trim().toLowerCase();
+
+  const filteredFaculties = useMemo(() => {
+    return faculties
+      .map((faculty) => {
+        const matchedCourses = searchTerm
+          ? faculty.courses.filter((course) =>
+              course.name.toLowerCase().includes(searchTerm)
+            )
+          : faculty.courses;
+
+        return {
+          ...faculty,
+          filteredCourses: matchedCourses,
+          autoOpen: searchTerm && matchedCourses.length > 0,
+        };
+      })
+      .filter((faculty) => !searchTerm || faculty.filteredCourses.length > 0);
+  }, [searchTerm]);
 
   return (
-    <>
-      <section className="py-20 px-6" id="courses">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Our Popular Courses
-        </h2>
+    <section className="max-w-5xl mx-auto px-4 py-10">
+      <input
+        type="text"
+        placeholder="Search by course name (MBA, BTech, BCA...)"
+        value={search}
+        onChange={(e) => {
+          setSearch(e.target.value);
+          setOpenFacultyId(null);
+        }}
+        className="w-full border p-3 rounded mb-8"
+      />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {courses.map((course) => (
-            <div
-              key={course.id}
-              className="border p-6 rounded-lg hover:shadow transition"
-            >
-              <Image
-                src={course.imageUrl}
-                alt={course.title}
-                width={500}
-                height={300}
-                className="w-full h-48 object-cover rounded-md"
-              />
-
-              <h3 className="font-semibold text-xl mb-2">{course.title}</h3>
-              <p className="text-gray-600 mb-4">{course.duration} Course</p>
-              <p className="font-bold">Who This Course is For</p>
-              {course.whoCanJoin.map((join) => (
-                <p key={join} className="m-1">
-                  {join}
-                </p>
-              ))}
-
-              <div className="flex justify-between space-x-2 mt-2">
-                <button className="text-white font-semibold bg-[#0F4529] p-2 cursor-pointer">
-                  Book Demo
-                </button>
-                <button
-                  onClick={() => setActiveCourse(course)}
-                  className="text-blue-700 font-semibold cursor-pointer"
-                >
-                  See Details
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {activeCourse && (
-        <CourseModal
-          course={activeCourse}
-          onClose={() => setActiveCourse(null)}
-        />
-      )}
-    </>
+      <div className="space-y-4">
+        {filteredFaculties.map((faculty) => (
+          <FacultyAccordion
+            key={faculty.id}
+            faculty={{
+              ...faculty,
+              courses: faculty.filteredCourses,
+            }}
+            isOpen={faculty.autoOpen || openFacultyId === faculty.id}
+            onToggle={() =>
+              setOpenFacultyId((prev) =>
+                prev === faculty.id ? null : faculty.id
+              )
+            }
+          />
+        ))}
+      </div>
+    </section>
   );
 }

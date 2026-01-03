@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer
@@ -15,8 +17,14 @@ export default function Footer() {
           {/* ✅ Card 1: Brand + Trust */}
           <FooterCard title="Alphaa1 Academy">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 bg-blue-700 rounded flex items-center justify-center font-bold">
-                A1
+              <div className="h-12 w-12 bg-white rounded flex items-center justify-center font-bold">
+                <Image
+                  src="/main-logo.png"
+                  alt="Institute Logo"
+                  className="h-15 w-auto"
+                  width={100}
+                  height={100}
+                />
               </div>
               <p className="text-xl font-semibold">Alphaa1 Academy</p>
             </div>
@@ -49,13 +57,8 @@ export default function Footer() {
 
             <p className="mt-4 text-sm">
               📞{" "}
-              <a href="tel:+919876543210" className="hover:underline">
-                +91 98765 43210
-              </a>
-              <br />
-              📞{" "}
-              <a href="tel:+919123456789" className="hover:underline">
-                +91 91234 56789
+              <a href="tel:+919321506675" className="hover:underline">
+                +91 93215 06675
               </a>
             </p>
 
