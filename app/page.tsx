@@ -9,17 +9,21 @@ import Contact from "./_components/Contact";
 import Footer from "./_components/Footer";
 import WhatsAppButton from "./_components/WhatsApp";
 import Reviews from "./_components/Reviews";
+import Founder from "./_components/Founder";
+import Gallery from "./_components/Gallery";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <NoticeBoard />
+      {/* <NoticeBoard /> */}
+      <Founder />
       <CoursesGrid />
       <WhyUs />
       <Reviews />
-      <Teams />
+      <Gallery />
+      {/* <Teams /> */}
       {/* <Contact /> */}
       <WhatsAppButton />
       <Footer />

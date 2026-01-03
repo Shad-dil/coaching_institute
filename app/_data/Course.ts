@@ -13,6 +13,86 @@ export type Faculty = {
 export const faculties: Faculty[] = [
   /* ================= HOTEL & HOSPITALITY ================= */
   {
+    id: "paramedical-health",
+    title: "Faculty of Paramedical & Health",
+    courses: [
+      {
+        id: "bmlt",
+        name: "BMLT",
+        eligibility: "10+2 Biology",
+      },
+      {
+        id: "bpt",
+        name: "BPT / BPT-LE",
+        eligibility: "10+2 Biology / DPT",
+      },
+      {
+        id: "bsc-paramedical",
+        name: "B.Sc Paramedical (All)",
+        eligibility: "10+2 Biology",
+      },
+      {
+        id: "msc-paramedical",
+        name: "M.Sc Paramedical",
+        eligibility: "B.Sc Relevant",
+      },
+      {
+        id: "diploma-paramedical",
+        name: "Diploma / PG Diploma / Certificate",
+        eligibility: "10th / 12th / Graduation",
+      },
+      {
+        id: "bph-mph",
+        name: "BPH / MPH",
+        eligibility: "10+2 Science / Graduation",
+      },
+    ],
+  },
+  /* ================= PHARMACY ================= */
+  {
+    id: "pharmacy",
+    title: "Faculty of Pharmacy",
+    courses: [
+      {
+        id: "dpharm",
+        name: "Diploma in Pharmacy (D.Pharm)",
+        eligibility: "10+2 (PCM/PCB)",
+      },
+      {
+        id: "bpharm",
+        name: "Bachelor of Pharmacy (B.Pharm)",
+        eligibility: "10+2 Science",
+      },
+    ],
+  },
+  /* ================= SCIENCE ================= */
+  {
+    id: "science",
+    title: "Faculty of Science",
+    courses: [
+      {
+        id: "bsc",
+        name: "B.Sc (PCM / PCB / ZBC)",
+        eligibility: "10+2 Science",
+      },
+      {
+        id: "bsc-hons",
+        name: "B.Sc (Hons / Hons with Research)",
+        eligibility: "10+2 Science",
+      },
+      {
+        id: "msc-2yr",
+        name: "M.Sc (All Subjects) – 2 Years",
+        eligibility: "Graduation in relevant subject",
+      },
+      {
+        id: "msc-1yr",
+        name: "M.Sc – 1 Year",
+        eligibility: "NHEQF Level 6",
+      },
+    ],
+  },
+  {
     id: "hotel-hospitality",
     title: "Faculty of Hotel & Hospitality",
     courses: [
@@ -171,61 +251,7 @@ export const faculties: Faculty[] = [
     ],
   },
 
-  /* ================= PHARMACY ================= */
-  {
-    id: "pharmacy",
-    title: "Faculty of Pharmacy",
-    courses: [
-      {
-        id: "dpharm",
-        name: "Diploma in Pharmacy (D.Pharm)",
-        eligibility: "10+2 (PCM/PCB)",
-      },
-      {
-        id: "bpharm",
-        name: "Bachelor of Pharmacy (B.Pharm)",
-        eligibility: "10+2 Science",
-      },
-    ],
-  },
-
   /* ================= PARAMEDICAL & HEALTH ================= */
-  {
-    id: "paramedical-health",
-    title: "Faculty of Paramedical & Health",
-    courses: [
-      {
-        id: "bmlt",
-        name: "BMLT",
-        eligibility: "10+2 Biology",
-      },
-      {
-        id: "bpt",
-        name: "BPT / BPT-LE",
-        eligibility: "10+2 Biology / DPT",
-      },
-      {
-        id: "bsc-paramedical",
-        name: "B.Sc Paramedical (All)",
-        eligibility: "10+2 Biology",
-      },
-      {
-        id: "msc-paramedical",
-        name: "M.Sc Paramedical",
-        eligibility: "B.Sc Relevant",
-      },
-      {
-        id: "diploma-paramedical",
-        name: "Diploma / PG Diploma / Certificate",
-        eligibility: "10th / 12th / Graduation",
-      },
-      {
-        id: "bph-mph",
-        name: "BPH / MPH",
-        eligibility: "10+2 Science / Graduation",
-      },
-    ],
-  },
 
   /* ================= YOGA ================= */
   {

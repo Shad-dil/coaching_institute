@@ -8,17 +8,17 @@ import {
 export const stats = [
   {
     icon: FaChalkboardTeacher,
-    value: "10+",
+    value: "1+",
     label: "Years Experience",
   },
   {
     icon: FaUserGraduate,
-    value: "500+",
+    value: "50+",
     label: "Students Trained",
   },
   {
     icon: FaCalendarAlt,
-    value: "50+",
+    value: "3+",
     label: "Batches Completed",
   },
   {

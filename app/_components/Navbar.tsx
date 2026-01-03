@@ -57,7 +57,7 @@ export default function Navbar() {
             href={whatsappLink}
             className="border border-white px-4 py-1.5 rounded"
           >
-            Book Free Demo
+            Book Free Appointment
           </a>
         </div>
       </div>
@@ -140,9 +140,9 @@ export default function Navbar() {
 
               <a
                 href={whatsappLink}
-                className="mt-2 bg-blue-700 px-4 py-2 rounded text-center"
+                className="mt-2 bg-[#0F4529] px-4 py-2 rounded text-center"
               >
-                Book Free Demo on WhatsApp
+                Book Free Appointment on WhatsApp
               </a>
             </nav>
           </div>

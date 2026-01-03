@@ -4,7 +4,7 @@ export default function WhatsAppButton() {
   return (
     <div className="fixed bottom-6 right-6 z-99">
       <a
-        href="https://wa.me/9321506675?text=Hi%20Sir,%20I%20want%20to%20book%20a%20free%20demo%20class." // replace with your WhatsApp number
+        href="https://wa.me/9321506675?text=Hi%20Sir,%20I%20want%20to%20know%20more%20about%20admissions." // replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition"

@@ -30,6 +30,7 @@ export default function CourseCatalog() {
 
   return (
     <section className="max-w-5xl mx-auto px-4 py-10">
+      <h1 className="flex justify-center p-2 text-4xl font-bold">Courses</h1>
       <input
         type="text"
         placeholder="Search by course name (MBA, BTech, BCA...)"

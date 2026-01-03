@@ -2,11 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const images = [
-  "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
-  "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
-  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
-];
+const images = ["/g4.jpeg", "/g2.jpeg", "/g3.jpeg", "g1.jpeg"];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
@@ -37,29 +33,46 @@ export default function Hero() {
       ))}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-6">
-        <h1 className="text-2xl md:text-5xl font-bold md:mb-4 mb-3">
-          Job-Focused Computer Courses in Darbhanga
+        {/* Main Heading */}
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 leading-snug">
+          Alpha A1 Academy, Darbhanga
         </h1>
-        <h2 className="text-md md:text-3xl font-bold md:mb-4 mb-3">
-          Trusted Offline Coaching Institute with Practical Training
+
+        {/* Sub Heading */}
+        <h2 className="text-base md:text-2xl font-semibold mb-4 max-w-3xl">
+          Multidisciplinary Higher Education Institute{" "}
+          <br className="hidden md:block" />
+          Offering Career-Oriented & University-Approved Programs
         </h2>
-        <p className="max-w-2xl md:text-lg text-sm md:mb-8 mb-4">
-          • Practical training • Small batches • Affordable fees • Offline +
-          personal attention
+
+        {/* Description */}
+        <p className="max-w-3xl text-sm md:text-lg mb-6 text-gray-200">
+          Affordable higher education with a strong focus on academic
+          excellence, practical skills, and professional ethics. Programs
+          offered in Arts, Science, Commerce, Engineering, Paramedical, Law,
+          Education, Yoga, and more — guided by experienced faculty and
+          student-centric support.
         </p>
 
-        <div className="flex gap-4">
+        {/* Highlights */}
+        <p className="text-sm md:text-base mb-8">
+          • UG & PG Programs • Paramedical & Technical Courses • Affordable Fees
+          • Experienced Faculty
+        </p>
+
+        {/* CTA */}
+        <div className="flex gap-4 flex-wrap justify-center">
           <a
-            className="bg-[#0F4529] text-white px-4 py-2 rounded"
-            href="https://wa.me/9321506675?text=Hi%20Sir,%20I%20want%20to%20book%20a%20free%20demo%20class." // replace with your WhatsApp number
+            className="bg-[#0F4529] hover:bg-[#0c3821] transition text-white px-6 py-3 rounded font-semibold"
+            href="https://wa.me/9321506675?text=Hi%20Sir,%20I%20want%20to%20know%20more%20about%20admissions."
             target="_blank"
             rel="noopener noreferrer"
           >
-            Book Free Demo on WhatsApp
+            Book Free Counselling on WhatsApp
           </a>
         </div>
       </div>

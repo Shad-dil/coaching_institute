@@ -32,7 +32,7 @@ export function FacultyAccordion({ faculty, isOpen, onToggle }: Props) {
               </div>
 
               <a
-                href={`https://wa.me/9321506675?text=Hi%20Sir,%20I%20want%20to%20book%20a%20free%20demo%20for%20${course.name}.`} // replace with your WhatsApp number
+                href={`https://wa.me/9321506675?text=Hi%20Sir,%20I%20want%20to%20book%20a%20free%20appointment%20for%20${course.name}.`} // replace with your WhatsApp number
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 text-white px-4 py-2 rounded text-sm w-fit"

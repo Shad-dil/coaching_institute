@@ -30,18 +30,21 @@ export default function Footer() {
             </div>
 
             <p className="text-sm text-white leading-relaxed">
-              Alphaa1 Academy is a trusted computer and professional coaching
-              institute in Darbhanga, Bihar. We focus on clear fundamentals,
-              practical training, and personal guidance to help students build
-              strong skills and confidence for their future.
+              Multidisciplinary Higher Education Institute Offering
+              Career-Oriented & University-Approved Programs Affordable higher
+              education with a strong focus on academic excellence, practical
+              skills, and professional ethics. Programs offered in Arts,
+              Science, Commerce, Engineering, Paramedical, Law, Education, Yoga,
+              and more — guided by experienced faculty and student-centric
+              support.
             </p>
 
             {/* Trust Badges */}
             <ul className="mt-4 text-sm text-white space-y-1">
-              <li>✔ Experienced & Qualified Instructors</li>
-              <li>✔ Practical & Job-Oriented Training</li>
-              <li>✔ Small Batch for Personal Attention</li>
-              <li>✔ Student Support & Career Guidance</li>
+              <li>✔ UG & PG Programs</li>
+              <li>✔ Paramedical & Technical Courses</li>
+              <li>✔ Affordable Fees</li>
+              <li>✔ Experienced Faculty</li>
             </ul>
           </FooterCard>
 
@@ -65,10 +68,10 @@ export default function Footer() {
             <p className="mt-2 text-sm">
               ✉️{" "}
               <a
-                href="mailto:alphaa1academy@gmail.com"
+                href="mailto:alphaa1academydbg@gmail.com"
                 className="hover:underline"
               >
-                alphaa1academy@gmail.com
+                alphaa1academydbg@gmail.com
               </a>
             </p>
 
