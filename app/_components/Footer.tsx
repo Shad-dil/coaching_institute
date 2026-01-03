@@ -1,4 +1,7 @@
+import { FacebookIcon, MailCheck, PhoneCall } from "lucide-react";
 import Image from "next/image";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -8,10 +11,6 @@ export default function Footer() {
       aria-label="Footer"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">
-          Alphaa1 Academy – Computer & Professional Coaching in Darbhanga
-        </h2>
-
         {/* Main Grid */}
         <div className="grid gap-6 md:grid-cols-3">
           {/* ✅ Card 1: Brand + Trust */}
@@ -58,20 +57,43 @@ export default function Footer() {
               Darbhanga, Bihar – 846003
             </address>
 
-            <p className="mt-4 text-sm">
-              📞{" "}
+            <p className="mt-4 text-sm flex justify-start items-center gap-2">
+              <PhoneCall className="h-4 w-4" />{" "}
               <a href="tel:+919321506675" className="hover:underline">
                 +91 93215 06675
               </a>
             </p>
 
-            <p className="mt-2 text-sm">
-              ✉️{" "}
+            <p className="mt-2 text-sm flex justify-start items-center gap-2">
+              <MailCheck className=" h-4 w-4" />
               <a
                 href="mailto:alphaa1academydbg@gmail.com"
                 className="hover:underline"
               >
                 alphaa1academydbg@gmail.com
+              </a>
+            </p>
+            <p className="mt-2 text-xl flex justify-start items-center gap-2">
+              <a
+                href="https://www.facebook.com/share/1TLxKzR9LR/?mibextid=wwXIfr"
+                target="_blank"
+                className="hover:underline"
+              >
+                <FaFacebook className=" h-6 w-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/alphaa1academy?igsh=MXNnaXV5enIxM3phaw%3D%3D&utm_source=qr"
+                target="_blank"
+                className="hover:underline"
+              >
+                <FaInstagram className=" h-6 w-6" />
+              </a>
+              <a
+                href="https://youtu.be/EFIXNLRRDsA?si=b50FYCgKvco5Mifs"
+                target="_blank"
+                className="hover:underline"
+              >
+                <FaYoutube className=" h-8 w-8" />
               </a>
             </p>
 

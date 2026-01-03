@@ -4,10 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 
 const images = [
-  "/gallery/g1.jpeg",
+  "/gallery/g4.jpeg",
   "/gallery/g2.jpeg",
   "/gallery/g3.jpeg",
-  "/gallery/g4.jpeg",
+  "/gallery/g1.jpeg",
   //   "/gallery/lab-1.jpg",
   //   "/gallery/event-2.jpg",
 ];

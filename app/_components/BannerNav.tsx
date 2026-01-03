@@ -24,8 +24,8 @@ export default function BannerNav() {
             <InfoItem
               icon={<Phone size={18} />}
               label="CALL US NOW"
-              value="+91 9321506675"
-              href="tel:+91 9321506675"
+              value="+91 7563859255"
+              href="tel:+91 7563859255"
             />
 
             <InfoItem

@@ -10,7 +10,7 @@ export default function Founder() {
           <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden">
             {/* Image */}
             <img
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655"
+              src="/founder.jpeg"
               alt={"Obaidur Rahman"}
               className="w-full h-64 object-cover"
             />
@@ -22,9 +22,24 @@ export default function Founder() {
                 Director & Founder
               </p>
               <p className="text-sm text-gray-600 mt-2">4+ Years Experience</p>
-
               <p className="text-gray-700 text-sm mt-4">
-                Computer Fundamentals & Advanced Programming
+                Alpha A1 Academy, Darbhanga is a leading multidisciplinary
+                <br />
+                higher education institute dedicated to delivering quality,
+                <br />
+                skill-based, and career-oriented education at an affordable fee
+                <br />
+                structure. The institution offers a diverse range of
+                <br />
+                undergraduate and postgraduate programs, including BA, BSc, and
+                <br />
+                MSc, along with highly demanded Paramedical courses such as
+                <br />
+                Medical Laboratory Technology (MLT), Radiology & Imaging
+                <br />
+                Technology (RIT), Operation Theatre Technology (OT),
+                <br />
+                Physiotherapy (PT), and Diploma in Technology (DT).
               </p>
             </div>
           </div>
