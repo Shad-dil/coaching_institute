@@ -22,7 +22,7 @@ export default function Founder() {
                 Director & Founder
               </p>
               <p className="text-sm text-gray-600 mt-2">4+ Years Experience</p>
-              <p className="text-gray-700 text-sm mt-4">
+              <p className="text-gray-700 text-sm mt-4 md:block hidden">
                 Alpha A1 Academy, Darbhanga is a leading multidisciplinary
                 <br />
                 higher education institute dedicated to delivering quality,
@@ -39,6 +39,17 @@ export default function Founder() {
                 <br />
                 Technology (RIT), Operation Theatre Technology (OT),
                 <br />
+                Physiotherapy (PT), and Diploma in Technology (DT).
+              </p>
+              <p className="text-gray-700 text-sm mt-4 md:hidden block">
+                Alpha A1 Academy, Darbhanga is a leading multidisciplinary
+                higher education institute dedicated to delivering quality,
+                skill-based, and career-oriented education at an affordable fee
+                structure. The institution offers a diverse range of
+                undergraduate and postgraduate programs, including BA, BSc, and
+                MSc, along with highly demanded Paramedical courses such as
+                Medical Laboratory Technology (MLT), Radiology & Imaging
+                Technology (RIT), Operation Theatre Technology (OT),
                 Physiotherapy (PT), and Diploma in Technology (DT).
               </p>
             </div>
