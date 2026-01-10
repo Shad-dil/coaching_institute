@@ -31,7 +31,7 @@ export default function BannerNav() {
             <InfoItem
               icon={<Mail size={18} />}
               label="MAIL ADDRESS"
-              value="alphaa1academy@gmail.com"
+              value="alphaa1academydbg@gmail.com"
               href="mailto:alphaa1academy@gmail.com"
             />
 
