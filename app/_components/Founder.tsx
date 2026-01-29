@@ -65,7 +65,16 @@ export default function Founder() {
             <p className="text-blue-600 font-medium mt-1">Director & Founder</p>
             <p className="text-sm text-gray-600 mt-2">4+ Years Experience</p>
 
-            <p className="text-gray-700 text-sm mt-4 leading-relaxed">
+            <p
+              className="
+  text-gray-700
+  text-sm
+  mt-4
+  leading-relaxed
+  text-justify
+  hyphens-auto
+"
+            >
               Alpha A1 Academy, Darbhanga is a leading multidisciplinary higher
               education institute dedicated to delivering quality, skill-based,
               and career-oriented education at an affordable fee structure. The

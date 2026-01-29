@@ -50,13 +50,19 @@ export default function Hero() {
         </h2>
 
         {/* Description */}
-        <p className="max-w-3xl text-sm md:text-lg mb-6 text-gray-200">
-          Affordable higher education with a strong focus on academic
-          excellence, practical skills, and professional ethics. Programs
-          offered in Arts, Science, Commerce, Engineering, Paramedical, Law,
-          Education, Yoga, and more — guided by experienced faculty and
-          student-centric support.
-        </p>
+        <div className="max-w-3xl mx-auto text-left">
+          <p
+            className="text-lg mt-4
+  leading-relaxed
+  text-justify
+  hyphens-auto"
+          >
+            Affordable higher education with a strong focus on academic
+            excellence, practical skills, and professional ethics. Programs
+            offered across Arts, Science, Commerce, Engineering, Paramedical,
+            Law, Education, Yoga, and more.
+          </p>
+        </div>
 
         {/* Highlights */}
         <p className="text-sm md:text-base mb-8">

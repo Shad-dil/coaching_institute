@@ -28,7 +28,12 @@ export default function Footer() {
               <p className="text-xl font-semibold">Alphaa1 Academy</p>
             </div>
 
-            <p className="text-sm text-white leading-relaxed">
+            <p
+              className="text-sm text-white mt-4
+  leading-relaxed
+  text-justify
+  hyphens-auto"
+            >
               Multidisciplinary Higher Education Institute Offering
               Career-Oriented & University-Approved Programs Affordable higher
               education with a strong focus on academic excellence, practical
@@ -106,22 +111,11 @@ export default function Footer() {
           <FooterCard title="Our Location on Google Map">
             <div className="w-full h-56 rounded overflow-hidden">
               <iframe
-                title="Alphaa1 Academy Location in Darbhanga"
-                src="https://www.google.com/maps?q=Darbhanga%20Bihar&output=embed"
-                className="w-full h-full border-0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.299256619559!2d85.8726648803378!3d26.121783918152072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb9002d5f6a9d%3A0x11605970cfee0a31!2sAlpha%20A1%20Academy!5e0!3m2!1sen!2sin!4v1769687530998!5m2!1sen!2sin"
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+                className="w-full h-70 rounded"
+              ></iframe>
             </div>
-
-            <a
-              href="https://maps.app.goo.gl/zWL43YuXiXSAyrXt8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-3 text-sm text-white hover:underline"
-            >
-              View on Google Maps
-            </a>
           </FooterCard>
         </div>
 
