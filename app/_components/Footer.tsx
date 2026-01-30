@@ -122,7 +122,7 @@ export default function Footer() {
         {/* ✅ Bottom Bar */}
         <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-white">
           © {new Date().getFullYear()} Alphaa1 Academy, Darbhanga. <br />
-          All rights reserved. Designed & developed by{" "}
+          All rights reserved. Designed & developed by <br />
           <a
             href="https://dilshad.online"
             target="_blank"
