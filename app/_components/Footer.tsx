@@ -94,7 +94,7 @@ export default function Footer() {
                 <FaInstagram className=" h-6 w-6" />
               </a>
               <a
-                href="https://youtu.be/EFIXNLRRDsA?si=b50FYCgKvco5Mifs"
+                href="https://www.youtube.com/@alphaa1academydarbhanga"
                 target="_blank"
                 className="hover:underline"
               >
